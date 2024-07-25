@@ -108,3 +108,6 @@ ENV/
 .vscode/
 .idea/
 
+# Ignore some files
+test_gen.sh
+gen.sh
