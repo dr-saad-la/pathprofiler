@@ -5,7 +5,7 @@
 
 import unittest
 
-from pathprofiler import pathprofiler
+from src.pathprofiler import pathprofiler
 
 
 class TestPathprofiler(unittest.TestCase):
