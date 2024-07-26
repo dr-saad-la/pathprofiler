@@ -1,4 +1,5 @@
 """Console script for pathprofiler."""
+
 import pathprofiler
 
 import typer
@@ -11,10 +12,10 @@ console = Console()
 @app.command()
 def main():
     """Console script for pathprofiler."""
-    console.print("Replace this message by putting your code into "
-               "pathprofiler.cli.main")
+    console.print(
+        "Replace this message by putting your code into " "pathprofiler.cli.main"
+    )
     console.print("See Typer documentation at https://typer.tiangolo.com/")
-    
 
 
 if __name__ == "__main__":

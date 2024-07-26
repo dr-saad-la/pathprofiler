@@ -5,7 +5,7 @@ This module provides utility functions to validate and manipulate file system pa
 """
 
 from pathlib import Path
-from typing import Union, List 
+from typing import Union, List
 
 
 def _check_path(path: Union[str, Path]) -> Path:
@@ -74,7 +74,7 @@ def make_dir(path: Union[str, Path]) -> None:
 
     if not isinstance(path, Path):
         raise TypeError("The provided path is neither a string nor a Path object.")
-    
+
     path.mkdir(parents=True, exist_ok=True)
 
 
@@ -194,7 +194,7 @@ def read_file(path: Union[str, Path]) -> str:
         ValueError: If the provided path is not a file.
     """
     path = _check_file(path)
-    with path.open('r', encoding='utf-8') as file:
+    with path.open("r", encoding="utf-8") as file:
         return file.read()
 
 
@@ -207,7 +207,7 @@ def write_file(path: Union[str, Path], content: str) -> None:
         content (str): The content to write to the file.
     """
     path = Path(path) if isinstance(path, str) else path
-    with path.open('w', encoding='utf-8') as file:
+    with path.open("w", encoding="utf-8") as file:
         file.write(content)
 
 
